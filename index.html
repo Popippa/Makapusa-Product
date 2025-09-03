@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-plan {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+
+      }
+
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px;
+      }
+      .pricing-plan {
+        border: 2px solid #ccc;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      }
+      .plan-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .plan-price {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+      .plan-features li {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      .plan-button {
+        background-color: #007bff;        
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 16px;
+      } 
+
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title"> Kapon (Male) </div>
+        <div class="plan-price"> ₱ 700.00 </div>
+        <ul class="plan-features">
+        <li>✅ Available</li> 
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Kapon (Female) </div>
+        <div class="plan-price">₱ 1500.00</div>
+        <ul class="plan-features">
+          <li>✅ Available</li> 
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Anti-Rabies</div>
+        <div class="plan-price">₱ 200.00 </div>
+        <ul class="plan-features">
+          <li>✅ Available</li> 
+        </ul>
+        <button class="plan-button">Sign Up</button>
+
+      </div>
+
+        <div class="pricing-plan">
+        <div class="plan-title">4-in-1 Vaccine</div>
+        <div class="plan-price">₱ 900.00 </div>
+        <ul class="plan-features">
+          <li>✅ Alphaherpesvirus-1 </li>
+          <li>✅ Calicivirus</li>
+          <li>✅ Panleukopenia </li>
+          <li>✅ Chlamydophila felis</li>
+          <li>✅ Available</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+
+      </div>
+        <div class="pricing-plan">
+        <div class="plan-title">Deworming </div>
+        <div class="plan-price">₱ 800.00 </div>
+        <ul class="plan-features">
+          <li>✅ Nexgard Combo</li>
+          <li>✅ Available </li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+        
+      </div>
+    </div>
+  </body>
+</html>
